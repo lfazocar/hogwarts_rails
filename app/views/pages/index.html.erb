@@ -1,9 +1,11 @@
-<h1>Hogwarts characters</h1>
+<h1>Characters from Hogwarts</h1>
 
-<% @character.each do |character| %>
-    <div>
-        <p><%= character.name %></p>
-        <p><%= character.location %></p>
-        <p><%= character.house %></p>
-    </div>
-<% end %>
+<section class="wrapper">
+    <% @character.each do |character| %>
+        <div class="character">
+            <h5>Name: <%= character.name %></h5>
+            <p>Location: <%= character.location %></p>
+            <p>House: <%= character.house %></p>
+        </div>
+    <% end %>
+</section>

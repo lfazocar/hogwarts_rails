@@ -1,0 +1,23 @@
+h1 {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.character {
+    border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.character > * {
+    margin: 0.5rem;
+}
