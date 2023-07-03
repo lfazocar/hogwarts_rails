@@ -1,24 +1,23 @@
-# README
+# Desafío evaluado "Despliegue de una aplicación en internet utilizando Heroku"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicación web hecha con Ruby on Rails diseñada para almacenar y mostrar el nombre, ubicación y casa de distintos personajes de Harry Potter.
 
-Things you may want to cover:
+# Software utilizado
 
-* Ruby version
+Ruby 3.2.2  
+Rails 7.0.5  
+PostgreSQL 14.8  
+Pico CSS  
 
-* System dependencies
+# Deployment en Heroku vía CLI
 
-* Configuration
+* Iniciar sesión con ```heroku login```
+* Crear aplicación con ```heroku create```
+* Conectar con la aplicación con ```heroku git:remote -a nombre_aplicación```
+* Subir aplicación con ```git push heroku main```
+* Ejecutar migración con ```heroku run rails db:migrate```
+* Ejecutar seed de datos con ```heroku run rails db:seed```
 
-* Database creation
+# Vista de aplicación
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Vista](view.webp)
