@@ -1,2 +1,9 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1>Hogwarts characters</h1>
+
+<% @character.each do |character| %>
+    <div>
+        <p><%= character.name %></p>
+        <p><%= character.location %></p>
+        <p><%= character.house %></p>
+    </div>
+<% end %>
